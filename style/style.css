@@ -36,6 +36,8 @@ body {
     border: 2px solid black;
 }
 
+
+
 header {
     height: 60px;
     background-color: #eaeaea;
@@ -50,6 +52,109 @@ header {
 }
 
 .my_icons > i {
+    color: #b1b1b1;
+    margin: 0 0.6rem;
+    font-size: 1.3rem;
+}
 
-    margin: 0 .5rem;
+.notification {
+
+    height: 80px;
+    background-color: #8edafc;
+
+}
+
+.fa-bell-slash {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px; 
+    color: #8edafc;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+
+}
+
+.notification p {
+    margin: 0;
+    line-height: 0.6;
+    margin-left: 10px;
+}
+
+.notification p span {
+    display: block;
+    font-weight: bold;
+    color: black;
+    font-size: 0.8rem;
+}
+
+/* .notification p br + span {
+    color: #555;
+    font-size: 0.9rem;
+} */
+
+.underline {
+    text-decoration: underline;
+    color: #555 !important;
+}
+
+.searchBar {
+    background-color: #fafafa;
+}
+
+.chats {
+    height: calc(100% - 187px);
+    background-color: white;
+    
+}
+
+.chat-container {
+    background-image: url(/img/mine.jpg);
+    height: calc(100% - 130px);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem   ;
+}
+
+
+.message_received {
+    background-color: #ffffff;
+    padding: 10px;
+    padding-right: 5rem;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 60%;
+    color: #000;
+    font-size: 14px;
+    align-self: flex-start; 
+}
+
+.my_message {
+    background-color:#e1ffc7 ;
+    padding: 10px;
+    margin: 5px 0;
+    padding-right: 5rem;
+    border-radius: 10px;
+    max-width: 60%;
+    color: #000;
+    font-size: 14px;
+    align-self: flex-end; 
+}
+
+.profile-pic {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+}
+
+.name {
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.last-message {
+    color: #888;
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 1.5;
 }

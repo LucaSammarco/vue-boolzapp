@@ -17,72 +17,109 @@
 </head>
 
 <body>
-    
-    <div class="container-body">
-    
-        <div class="green-part"></div>
-        <div class="gray-part"></div>
+    <div id="app">
+        <div class="container-body">
         
-
-        <div class="app-container">
-
-            <div class="container-fluid h-100 p-0">
-                
-                <div class="row g-0">
-
-                    <div class="col-4 border-end p-0">
-                        <header class="d-flex justify-content-between">
-
-                            <div class="my_profile d-flex align-items-center">
-                                <img src="img/avatar_io.jpg" class="my_profilePic img-fluid" alt="">
-                                Sofia
-                            </div>
-
-                            <div class="my_icons d-flex align-items-center justify-content-around">
-                                <i class="fa-solid fa-circle-notch"></i>
-                                <i class="fa-solid fa-message"></i>
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-
-                        </header>
-
-                    </div>
-
-                    
-                    <div class="col p-0">
-
-                        <header class="d-flex justify-content-between">
-
-                            <div class="my_profile">
-                                sda
-                            </div>
-
-                            <div class="my_icons">
-                                sdasda
-                            </div>
-
-                        </header>
-
-
-                    </div>
-                </div>
-
-            </div>
+            <div class="green-part"></div>
+            <div class="gray-part"></div>
             
-        </div>
+            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+            <div class="app-container">
+
+                <div class="container-fluid h-100 p-0">
+                    
+                    <div class="row g-0 h-100">
+
+                    <!-- Left Side -->
+                        <div class="col-5 border-end p-0">
+                            <header class="d-flex justify-content-between">
+
+                                <div class="my_profile d-flex align-items-center">
+                                    <img src="img/avatar_io.jpg" class="my_profilePic img-fluid" alt="">
+                                    <p class="mt-auto">Sofia</p>   
+                                </div>
+
+                                <div class="my_icons d-flex align-items-center justify-content-around me-2">
+                                    <i class="fa-solid fa-circle-notch"></i>
+                                    <i class="fa-solid fa-message"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+
+                            </header>
+
+                            <div class="notification d-flex align-items-center ">
+
+                                <i class="fa-solid fa-bell-slash"></i>
+                                <p><span>Ricevi notifiche per i nuovi messaggi</span><br> <span class="underline">Attiva notifiche desktop</span></p>
+                            </div>
+                            
+                            <div class="searchBar p-1">
+                                
+                                <div class="input-group ">
+                                    <span class="input-group-text bg-white">
+                                    <i class="fas fa-search"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search">
+                                </div>
+
+                            </div>
+
+                            <div class="chats pt-2">
+                                <div class="chat d-flex">
+                                    <img src="img/avatar_2.jpg" alt="" class="ms-3 img-fluid profile-pic">
+                                    <div class="chat-elements ms-3">
+                                        <p class="name">Michele</p>
+                                        <p class="last-message">Ultimo messaggio inviato</p>
+                                    </div>
+                                    
 
 
+                                </div>
+
+                            </div>
 
 
+                        </div>
 
+                        <!-- Right Side -->
+                        <div class="col p-0">
 
+                            <header class="d-flex justify-content-between">
 
+                                <div class="my_profile d-flex align-items-center">
+                                    <img src="img/avatar_io.jpg" class="my_profilePic img-fluid" alt="">
+                                <p class="mt-auto">Michele</p>   
+                                </div>
 
+                                <div class="my_icons d-flex align-items-center justify-content-around me-2">
+                                    <i class="fa-solid fa-circle-notch"></i>
+                                    <i class="fa-solid fa-message"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+
+                            </header>
+
+                            <div class="chat-container">
+                                <div class="my_message">Hai portato a spasso il cane?</div>
+                                <div class="my_message">Ricordati di stendere i panni</div>
+                                <div class="message_received">Tutto fatto!</div>
+                            </div>
+
+                            <footer>
+                                
+                            </footer>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
 
     </div>
 
 
-
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
@@ -92,10 +129,9 @@
 </html>
 
 
-<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-<div id="app">
+
+
    
    
     
-</div> -->
