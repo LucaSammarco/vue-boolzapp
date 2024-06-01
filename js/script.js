@@ -172,14 +172,14 @@ const contacts = [
 ]
 
 const updatedContacts = contacts.map(contact => {
-    contact.avatar = contact.avatar + '.jpeg';
+    contact.avatar = contact.avatar + '.jpg';
     return contact;
 });
 
 createApp({
     data() {
         return {
-            contacts: updatedContacts
+            updatedContacts
         };
 
        

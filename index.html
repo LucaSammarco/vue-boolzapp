@@ -66,10 +66,14 @@
                             </div>
 
                             <div class="chats pt-2">
-                                <div class="chat d-flex">
-                                    <img src="img/avatar_2.jpg" alt="" class="ms-3 img-fluid profile-pic">
+
+
+                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pb-3">
+                                    
+                                    
+                                    <img :src="element.avatar" alt="" class="ms-3 img-fluid profile-pic">
                                     <div class="chat-elements ms-3">
-                                        <p class="name">Michele</p>
+                                        <p class="name"> {{ element.name }} </p>
                                         <p class="last-message">Ultimo messaggio inviato</p>
                                     </div>
                                     
