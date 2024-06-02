@@ -191,7 +191,10 @@ createApp({
     },
 
     methods: {
-       
+
+       changePic: function (indiceCorrente) {
+        this.activeIndex = indiceCorrente
+       }
     }
     
 }).mount("#app");

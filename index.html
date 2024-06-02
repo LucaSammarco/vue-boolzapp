@@ -68,7 +68,7 @@
                             <div class="chats pt-2">
 
 
-                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pt-3 pb-3">
+                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pt-3 pb-3" @click="changePic(index)"  >
                                     
                                     
                                     <img :src="element.avatar" alt="" class="ms-3 img-fluid profile-pic">
