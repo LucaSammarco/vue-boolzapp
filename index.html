@@ -72,6 +72,7 @@
                                     
                                     
                                     <img :src="element.avatar" alt="" class="ms-3 img-fluid profile-pic">
+
                                     <div class="chat-elements ms-3">
                                         <p class="name"> {{ element.name }} </p>
                                         <p class="last-message">Ultimo messaggio inviato</p>
@@ -110,9 +111,24 @@
 
                             <div class="chat-container">
 
-                                <div class="my_message">Hai portato a spasso il cane?</div>
+
+                               
+                                   
+                                    
+                                <div class="chat-container">
+                                    <div v-for="(message, index) in updatedContacts[activeIndex].messages" :key="index" >
+                                        {{ message.message }}
+                                    </div>
+                                </div>
+                                
+                                    
+
+
+                            </div>
+
+                                <!-- <div class="my_message">Hai portato a spasso il cane?</div>
                                 <div class="my_message">Ricordati di stendere i panni</div>
-                                <div class="message_received">Tutto fatto!</div>
+                                <div class="message_received">Tutto fatto!</div> -->
                                 
                             </div>
 
