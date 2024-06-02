@@ -68,7 +68,7 @@
                             <div class="chats pt-2">
 
 
-                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pb-3">
+                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pt-3 pb-3">
                                     
                                     
                                     <img :src="element.avatar" alt="" class="ms-3 img-fluid profile-pic">
@@ -92,8 +92,12 @@
                             <header class="d-flex justify-content-between">
 
                                 <div class="my_profile d-flex align-items-center">
-                                    <img src="img/avatar_io.jpg" class="my_profilePic img-fluid" alt="">
-                                <p class="mt-auto">Michele</p>   
+
+                                    <img :src="updatedContacts[activeIndex].avatar" class="my_profilePic img-fluid" alt="">
+
+                                    <p class="mt-auto"> {{updatedContacts[activeIndex].name}}</p>   
+
+
                                 </div>
 
                                 <div class="my_icons d-flex align-items-center justify-content-around me-2">
@@ -105,9 +109,11 @@
                             </header>
 
                             <div class="chat-container">
+
                                 <div class="my_message">Hai portato a spasso il cane?</div>
                                 <div class="my_message">Ricordati di stendere i panni</div>
                                 <div class="message_received">Tutto fatto!</div>
+                                
                             </div>
 
                             <footer>

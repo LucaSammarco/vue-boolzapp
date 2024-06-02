@@ -168,6 +168,8 @@ const contacts = [
                 status: 'received'
             }
         ],
+
+        activeIndex: 0,
     }
 ]
 
@@ -179,6 +181,9 @@ const updatedContacts = contacts.map(contact => {
 createApp({
     data() {
         return {
+
+            activeIndex: 0, 
+
             updatedContacts
         };
 
