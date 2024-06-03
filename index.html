@@ -32,7 +32,7 @@
                     <div class="row g-0 h-100">
 
                     <!-- Left Side -->
-                        <div class="col-5 border-end p-0">
+                        <div class="col-4 border-end p-0">
                             <header class="d-flex justify-content-between">
 
                                 <div class="my_profile d-flex align-items-center">
@@ -116,7 +116,7 @@
                                    
                                     
                                 <div class="chat-container">
-                                    <div v-for="(message, index) in updatedContacts[activeIndex].messages" :key="index" >
+                                    <div v-for="(message, index) in updatedContacts[activeIndex].messages" :key="index" :class="message.status === 'received' ? 'message_received' : 'my_message'" >
                                         {{ message.message }}
                                     </div>
                                 </div>

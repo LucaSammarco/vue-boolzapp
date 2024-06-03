@@ -1,6 +1,6 @@
 .container-body {
     position: relative;
-    display: fle;
+   
 }
 
 
@@ -34,6 +34,7 @@ body {
 
 .container-fluid {
     border: 2px solid black;
+    display: fle;
 }
 
 
@@ -104,6 +105,7 @@ header {
 .chats {
     height: calc(100% - 187px);
     background-color: white;
+    overflow-y: scroll;
     
 }
 
@@ -141,24 +143,26 @@ header {
 }
 
 .profile-pic {
-    width: 40px; 
-    height: 40px;
+    width: 50px; 
+    height: 50px;
     border-radius: 50%; 
 }
 
 .name {
     font-weight: bold;
     margin: 0;
-    line-height: 0.9;
+    line-height: 1.2;
+    font-size: 1.2rem;
 }
 
 .last-message {
     color: #888;
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.5;
 }
 
 .chat:hover {
     background-color: rgba(128, 128, 128, 0.2);
   }
+
