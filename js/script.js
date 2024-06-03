@@ -208,7 +208,11 @@ createApp({
 
         this.newMessage = ""
 
-       }
+       },
+
+       reply: function() {};
+
+
 
     }
     
