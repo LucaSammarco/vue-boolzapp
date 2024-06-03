@@ -1,9 +1,11 @@
 
 
-
 const { createApp } = Vue;
 
 
+
+const DateTime = luxon.DateTime;
+const now = DateTime.now();
 
 
 
@@ -170,7 +172,8 @@ const contacts = [
         ],
 
         activeIndex: 0,
-
+        
+        
        
     }
 ]
@@ -191,6 +194,12 @@ createApp({
             updatedContacts,
 
             newMessage: '',
+
+            newReply: 'ok',
+
+            DateTime: luxon.DateTime,
+
+            now: DateTime.now(),
         };
 
        
@@ -202,15 +211,27 @@ createApp({
         this.activeIndex = indiceCorrente
        },
 
+       reply: function() {
+
+        this.updatedContacts[this.activeIndex].messages.push({ date: '10/01/2020 15:51:00', message: this.newReply, status: 'received' });
+
+        
+
+         
+       },
+
+
        addNewMessage: function(indiceCorrente) {
 
-        this.updatedContacts[this.activeIndex].messages.push({ date: '10/01/2020 15:51:00', message: this.newMessage, status: 'sent' });
+        this.updatedContacts[this.activeIndex].messages.push({ date: this.now.toFormat('dd/MM/yyyy HH:mm:ss') , message: this.newMessage, status: 'sent' });
+
+        setTimeout(this.reply, 1000),
 
         this.newMessage = ""
 
+         
        },
 
-       reply: function() {};
 
 
 
