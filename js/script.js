@@ -198,9 +198,16 @@ createApp({
 
     methods: {
 
-       changePic: function (indiceCorrente) {
+       changeIndex: function (indiceCorrente) {
         this.activeIndex = indiceCorrente
+       },
+
+       addNewMessage: function(indiceCorrente) {
+
+        this.updatedContacts[this.activeIndex].messages.push({ date: '10/01/2020 15:51:00', message: this.newMessage, status: 'sent' });
+
        }
+
     }
     
 }).mount("#app");

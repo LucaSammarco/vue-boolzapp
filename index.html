@@ -68,7 +68,7 @@
                             <div class="chats pt-2">
 
 
-                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pt-3 pb-3" @click="changePic(index)"  >
+                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pt-3 pb-3" @click="changeIndex(index)"  >
                                     
                                     
                                     <img :src="element.avatar" alt="" class="ms-3 img-fluid profile-pic">
@@ -116,7 +116,8 @@
                                    
                                     
                                 <div class="chat-container">
-                                    <div v-for="(message, index) in updatedContacts[activeIndex].messages" :key="index" :class="message.status === 'received' ? 'message_received' : 'my_message'" >
+
+                                    <div v-for="(message, index) in updatedContacts[activeIndex].messages" :key="index" :class="message.status === 'received' ? 'message_received' : 'my_message'"  >
                                         {{ message.message }}
                                     </div>
                                 </div>
@@ -138,7 +139,7 @@
                             
                             
                             <div class="input-group flex-nowrap">
-                               <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Messagge" aria-describedby="addon-wrapping" v-model="newMessage">
+                               <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Messagge" aria-describedby="addon-wrapping" v-model="newMessage" @keyup.enter="addNewMessage(activeIndex)">
                             </div>
 
                             <div class="sendIcon">xx</div>
