@@ -170,8 +170,12 @@ const contacts = [
         ],
 
         activeIndex: 0,
+
+       
     }
 ]
+
+
 
 const updatedContacts = contacts.map(contact => {
     contact.avatar = contact.avatar + '.jpg';
@@ -184,7 +188,9 @@ createApp({
 
             activeIndex: 0, 
 
-            updatedContacts
+            updatedContacts,
+
+            newMessage: '',
         };
 
        
