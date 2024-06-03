@@ -124,6 +124,7 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
 
                                     <div v-for="(message, index) in updatedContacts[activeIndex].messages" :key="index" :class="message.status === 'received' ? 'message_received' : 'my_message'"  >
                                         {{ message.message }}
+                                        <span class="timeStamp"> {{ message.date }}</span>
                                     </div>
                                 </div>
                                 
@@ -138,7 +139,9 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
                           
 
                         </div>
-                        <div class="send-message d-flex">
+
+                        
+                        <div class="send-message d-flex align-items-center">
                             
                             <div class="sendIcon">xx</div>
                             
@@ -148,7 +151,7 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
                             </div>
 
                             <div class="sendIcon">xx</div>
-
+                        </div>
                         </div>
                     </div>
 

@@ -182,7 +182,7 @@ const contacts = [
 
 const updatedContacts = contacts.map(contact => {
     contact.avatar = contact.avatar + '.jpg';
-    return contact;
+       return contact;
 });
 
 createApp({
@@ -213,7 +213,7 @@ createApp({
 
        reply: function() {
 
-        this.updatedContacts[this.activeIndex].messages.push({ date: '10/01/2020 15:51:00', message: this.newReply, status: 'received' });
+        this.updatedContacts[this.activeIndex].messages.push({ date: this.now.toFormat('HH:mm'), message: this.newReply, status: 'received' });
 
         
 
@@ -223,7 +223,7 @@ createApp({
 
        addNewMessage: function(indiceCorrente) {
 
-        this.updatedContacts[this.activeIndex].messages.push({ date: this.now.toFormat('dd/MM/yyyy HH:mm:ss') , message: this.newMessage, status: 'sent' });
+        this.updatedContacts[this.activeIndex].messages.push({ date: this.now.toFormat('HH:mm') , message: this.newMessage, status: 'sent' });
 
         setTimeout(this.reply, 1000),
 
