@@ -29,11 +29,11 @@ body {
     transform: translateX(-50%);
     height: 95vh;
     width: 80vw;
-    border: 2px solid red;
+    
 }
 
 .container-fluid {
-    border: 2px solid black;
+    
     display: fle;
 }
 
@@ -103,18 +103,19 @@ header {
 }
 
 .chats {
-    height: calc(100% - 187px);
+    height: calc(100% - 186px);
     background-color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
     
 }
 
 .chat-container {
-    background-image: url(/img/mine.jpg);
-    height: calc(100% - 130px);
+    background-image: url(../img/mine.jpg);
+    height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
-    padding: 2rem   ;
+    padding: 2rem;
+    
 }
 
 
@@ -175,5 +176,32 @@ header {
   }
 
 .send-message {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: #eaeaea;
+    width: 100%;
+  }
 
+  .col {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.sendIcon{
+    margin: 0 1.5rem;
+    font-size: 1.3rem;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+img {
+    cursor:pointer
+}
+
+.chat-elements {
+    cursor: pointer;
 }
