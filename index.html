@@ -59,13 +59,13 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
                                 <p><span>Ricevi notifiche per i nuovi messaggi</span><br> <span class="underline">Attiva notifiche desktop</span></p>
                             </div>
                             
-                            <div class="searchBar p-1">
+                            <div class="searchBar p-2">
                                 
-                                <div class="input-group ">
-                                    <span class="input-group-text bg-white">
+                                <div class="input-group m-1">
+                                    <span class="input-group-text border-0 bg-white">
                                     <i class="fas fa-search"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" v-model="search">
+                                    <input type="text" class=" shadow-none border-0 form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" v-model="search">
                                 </div>
 
                             </div>
@@ -149,8 +149,8 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
                             <div class="sendIcon"><i class="fa-regular fa-face-smile"></i></div>
                             
                             
-                            <div class="input-group flex-nowrap">
-                               <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Messagge" aria-describedby="addon-wrapping" v-model="newMessage" @keyup.enter="addNewMessage(activeIndex)">
+                            <div class="input-group flex-nowrap ">
+                               <input type="text" class="shadow-none border-0 form-control" placeholder="Scrivi un messaggio" aria-label="Messagge" aria-describedby="addon-wrapping" v-model="newMessage" @keyup.enter="addNewMessage(activeIndex)">
                             </div>
 
                         <div class="sendIcon"><i class="fa-solid fa-microphone"></i></div>

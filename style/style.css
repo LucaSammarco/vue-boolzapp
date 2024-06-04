@@ -103,7 +103,7 @@ header {
 }
 
 .chats {
-    height: calc(100% - 186px);
+    height: calc(100% - 200px);
     background-color: white;
     overflow-y: auto;
     
@@ -194,7 +194,7 @@ header {
     font-size: 1.3rem;
 }
 
-.fa-solid {
+.fa-regular, .fa-solid {
     cursor: pointer;
 }
 
