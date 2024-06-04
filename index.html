@@ -65,7 +65,7 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
                                     <span class="input-group-text bg-white">
                                     <i class="fas fa-search"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search">
+                                    <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Search" v-model="search">
                                 </div>
 
                             </div>
@@ -73,7 +73,7 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
                             <div class="chats pt-2">
 
 
-                                <div v-for="(element, index) in updatedContacts" :key="index" class="chat d-flex pt-3 pb-3" @click="changeIndex(index)"  >
+                                <div v-for="(element, index) in searchChat" :key="index" class="chat d-flex pt-3 pb-3" @click="changeIndex(index)"  >
                                     
                                     
                                     <img :src="element.avatar" alt="" class="ms-3 img-fluid profile-pic">
@@ -126,6 +126,9 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js
                                         {{ message.message }}
                                         <span class="timeStamp"> {{ message.date }}</span>
                                     </div>
+
+
+
                                 </div>
                                 
                                     

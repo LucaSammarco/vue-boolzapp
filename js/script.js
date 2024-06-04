@@ -182,6 +182,8 @@ const contacts = [
 
 const updatedContacts = contacts.map(contact => {
     contact.avatar = contact.avatar + '.jpg';
+    // contact.messages.data = contact.messages.data.toFormat('HH:mm');
+
        return contact;
 });
 
@@ -200,6 +202,8 @@ createApp({
             DateTime: luxon.DateTime,
 
             now: DateTime.now(),
+
+            search: ""
         };
 
        
@@ -235,6 +239,12 @@ createApp({
 
 
 
+    },
+
+    computed: {
+        searchChat(){
+            return this.updatedContacts.filter(contact => contact.name.toLowerCase().includes(this.search))
+        }
     }
     
 }).mount("#app");
