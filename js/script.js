@@ -177,15 +177,20 @@ const contacts = [
        
     }
 ]
-
-
-
 const updatedContacts = contacts.map(contact => {
     contact.avatar = contact.avatar + '.jpg';
-    // contact.messages.data = contact.messages.data.toFormat('HH:mm');
 
-       return contact;
+    contact.messages.forEach(function(element){
+
+        
+        let newDate = DateTime.fromFormat(element.date, 'dd/MM/yyyy HH:mm:ss');
+        element.date = newDate.toFormat('HH:mm');
+    });
+
+    return contact;
 });
+
+
 
 createApp({
     data() {

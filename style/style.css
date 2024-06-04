@@ -148,7 +148,7 @@ header {
 .timeStamp {
     align-self: flex-end;
     font-size: 0.5rem;
-    margin-left: 4rem;
+    margin-left: 1rem;
     line-height: 0.5;
 }
 .profile-pic {
