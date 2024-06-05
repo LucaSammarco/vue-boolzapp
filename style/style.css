@@ -105,8 +105,7 @@ header {
 .chats {
     height: calc(100% - 200px);
     background-color: white;
-    overflow-y: auto;
-    
+    overflow-y: scroll;
 }
 
 .chat-container {
@@ -115,6 +114,8 @@ header {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    overflow-y: auto;
+    
     
 }
 
